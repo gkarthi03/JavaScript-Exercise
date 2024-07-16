@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Sprite Image Duplicate
+        </title>
+        <style>
+            .spriteImage
+            {
+                background: url(1aA.png) 0 0;
+                width: 75px;
+                height: 53px;
+            }
+            #id{
+                margin: 10px;
+                padding: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>Sprite Image</h3>
+        <img src="1aA.png" id="img" height="100px" width="100px"><br>
+        <a>Number Of Row:</a>
+        <input type="number" id="rowCount">
+        <a>Number of Column:</a>
+        <input type="number" id="columnCount"><br>
+        <button onclick="draw()">Draw</button>
+        <div id="result"></div>
+
+        <canvas id="canvas" height="1000" width="1000"></canvas>
+        <script src="drawSprite.js"></script>
+    </body>
+</html>

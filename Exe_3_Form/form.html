@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fill Form</title>
+        <style>
+            .invalid
+            {
+                border-color: red;
+                border-width : 2px;
+            }
+        </style>
+    </head>
+    <body>
+        <form onsubmit="checkInput()">
+            <span>Name:</span>
+            <input type="text" id="Name" onkeyup="validateName()" required><br>
+            <span>DOB:<span>
+                <input type="text" id="dateInput" onkeyup="validateDate()" placeholder="MM-DD-YYYY" required><br>
+            <span>Sex:</span>
+            <select name="sex" required>
+                <option>Male</option>
+                <option>Female</option>
+            </select><br>
+            <span>Mobile Number:<span>
+            <input type="text" id="phNumber" onkeyup="validateNumber()">
+            <br>
+            <input type="submit" value="submit" id="submitbtn" disabled>
+            <button name="Reset" onclick="resetData()">Reset</button>
+
+        </form>
+        <script src="formData.js"></script>
+    </body>
+
+</html>

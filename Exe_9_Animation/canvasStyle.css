@@ -1,0 +1,10 @@
+#canvas
+{
+    height: 500px;
+    width: 500px;
+    background-color: rgb(254, 211, 154);
+
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+}
